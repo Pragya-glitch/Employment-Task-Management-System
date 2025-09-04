@@ -1,0 +1,5 @@
+const taskData = {
+        ...newTask,
+        due_date: newTask.due_date ? newTask.due_date.toISOString() : null,
+        assigned_to: newTask.assigned_to === 'unassigned' ? null : newTask.assigned_to || null
+      };
