@@ -1,0 +1,7 @@
+# Update task
+    update_dict = task_data.dict(exclude_unset=True)
+    # Handle unassigned value
+    if update_dict.get('assigned_to') == 'unassigned':
+        update_dict['assigned_to'] = None
+    update_dict['updated_at'] = datetime.now(timezone.utc)
+    update_dict = prepare_for_mongo(update_dict)
