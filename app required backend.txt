@@ -1,0 +1,7 @@
+
+Action: 'file_editor str_replace /app/backend/requirements.txt --old-str typer>=0.9.0 --new-str typer>=0.9.0\nbcrypt>=4.0.0\npython-jose[cryptography]>=3.3.0'
+Observation: Edit was successful.
+
+Installing dependencies from requirements.txt
+
+
